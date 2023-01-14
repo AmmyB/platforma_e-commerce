@@ -6,6 +6,7 @@ import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.Set;
 
 @Data
 @Entity
@@ -31,6 +32,11 @@ public class Zamowienie {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private Zwrot zwrot;
+
+    @OneToMany(mappedBy = "zamowienie")
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    private Set<Pozycja_zamowienia> pozycjeZamowienia;
 
 
 }
