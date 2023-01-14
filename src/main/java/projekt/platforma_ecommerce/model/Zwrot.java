@@ -23,7 +23,7 @@ public class Zwrot {
     private String statusZwrotu;
     private String komentarz;
 
-    @OneToOne
+    @ManyToOne
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private Zamowienie zamowienie;

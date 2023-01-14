@@ -23,6 +23,6 @@ public class Produkt {
     @OneToMany(mappedBy = "produkt")
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    private Set<Pozycja_zamowienia> pozycjeZamowienia;
+    private Set<Pozycja_zamowienia> zamowienieKlientaIlosc;
 
 }

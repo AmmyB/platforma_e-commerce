@@ -28,15 +28,15 @@ public class Zamowienie {
     @EqualsAndHashCode.Exclude
     private Klient klient;
 
-    @OneToOne(mappedBy = "zamowienie")
+    @OneToMany(mappedBy = "zamowienie")
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    private Zwrot zwrot;
+    private Set<Zwrot> zwroty;
 
     @OneToMany(mappedBy = "zamowienie")
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    private Set<Pozycja_zamowienia> pozycjeZamowienia;
+    private Set<Pozycja_zamowienia> zamowienieKlientaZawartosc;
 
 
 }
