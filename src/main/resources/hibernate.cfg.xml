@@ -16,9 +16,9 @@
 
         <!-- Definicja modeli -->
         <mapping class="pl.sda.hibernate.wypozyczenie.model.Klient"/>
-        <mapping class="pl.sda.hibernate.wypozyczenie.model.Zamówienie"/>
+        <mapping class="pl.sda.hibernate.wypozyczenie.model.Zamowienie"/>
         <mapping class="pl.sda.hibernate.wypozyczenie.model.Produkt"/>
-        <mapping class="pl.sda.hibernate.wypozyczenie.model.Pozycja_zamówienia"/>
+        <mapping class="pl.sda.hibernate.wypozyczenie.model.Pozycja_zamowienia"/>
         <mapping class="pl.sda.hibernate.wypozyczenie.model.Zwrot"/>
 
     </session-factory>
